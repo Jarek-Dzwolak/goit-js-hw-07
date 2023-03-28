@@ -27,12 +27,8 @@ MyGallery.addEventListener("click", (event) => {
 
   const instance = basicLightbox.create(
     `<img src="${event.target.dataset.source}"/>`,
-    {
-      onShow: (instance) => {
-        instance.element().querySelector("a").onclick = instance.close;
-      },
-    }
+    {}
   );
-  image.png;
+
   instance.show();
 });
